@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./src/wallpapersden.com_rick-and-morty-space_2880x1800.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+}
+input{
+    display: none;
+}
+.slider__wrapper{
+    margin: 25px auto 0 auto;
+    width: 50vw;
+    height: 60vh;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.slider{
+    width: 100%;
+    height: 97%;
+}
+.slide__wrapper{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10%;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.slide__wrapper div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    overflow: hidden;
+    transition: all .6s ease;
+}  
+
+.slide_1{
+    margin: 15px auto;
+    background-image: url('./src/1.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide_2{
+    margin: 15px auto;
+    background-image: url('./src/2.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide_3{
+    margin: 15px auto;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/254839631190015119/CDE10A7684D56CE204B55C89329DB790AE39B2A7/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide_4{
+    margin: 15px auto;
+    background-image: url('./src/4.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+p{
+    display: block;
+    color: rgb(94, 243, 9);
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.buttons{
+    display: flex;
+    margin-left: 60vw;
+    margin-top: -50px;
+}
+.btn{
+    width: 30px;
+    height: 10px;
+    padding: 6px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: rgb(94, 243, 9);
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: rgb(10, 156, 32);
+    transform: scale(1.2);
+}
+input:checked #label_1{
+    background-color: brown;
+}
+#rad_1:checked ~ .slide__wrapper{
+    margin-left: 0%;
+}
+#rad_2:checked ~ .slide__wrapper{
+    margin-left: -100%;
+}
+#rad_3:checked ~ .slide__wrapper{
+    margin-left: -200%;
+}
+#rad_4:checked ~ .slide__wrapper{
+    margin-left: -300%;
+}
+
