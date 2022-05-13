@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(./src/wallpapersden.com_rick-and-morty-space_2880x1800.jpg);
+    background-image: url('./src/wallpapersden.com_rick-and-morty-space_2880x1800.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -79,15 +79,14 @@ p{
     font-size: 2rem;
     margin-left: 2rem;
 }
-
 .buttons{
     display: flex;
     margin-left: 60vw;
     margin-top: -50px;
 }
 .btn{
-    width: 30px;
-    height: 10px;
+    width: 2vw;
+    height: 1vw;
     padding: 6px;
     margin: 6px;
     cursor: pointer;
@@ -97,9 +96,6 @@ p{
 .btn:hover{
     background-color: rgb(10, 156, 32);
     transform: scale(1.2);
-}
-input:checked #label_1{
-    background-color: brown;
 }
 #rad_1:checked ~ .slide__wrapper{
     margin-left: 0%;
@@ -113,4 +109,24 @@ input:checked #label_1{
 #rad_4:checked ~ .slide__wrapper{
     margin-left: -300%;
 }
+body.slider__wrapper>.slider>#rad_1:checked ~ body>.buttons>#l1{
+    background-color: rgb(156, 10, 10);
+}
 
+@media (max-width:1280px) {
+p{
+font-size: 3vh;
+margin-left: 1rem;
+}
+.buttons{
+    margin: 0;
+    margin-top: -70px;
+    align-self: center;
+}
+.slider__wrapper{
+height: 40vh;
+}
+.slide__wrapper div{
+margin-bottom: 30px;
+}
+}
