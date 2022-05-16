@@ -21,6 +21,7 @@ input{
     overflow: hidden;
     border: 5px solid white;
     border-radius: 10px;
+    /* background-color: black; */
 }
 .slider{
     width: 100%;
@@ -44,7 +45,6 @@ input{
     overflow: hidden;
     transition: all .6s ease;
 }  
-
 .slide_1{
     margin: 15px auto;
     background-image: url('./src/1.jpg');
@@ -87,7 +87,6 @@ p{
 .btn{
     width: 2vw;
     height: 1vw;
-    padding: 6px;
     margin: 6px;
     cursor: pointer;
     background-color: rgb(94, 243, 9);
@@ -109,8 +108,9 @@ p{
 #rad_4:checked ~ .slide__wrapper{
     margin-left: -300%;
 }
-body.slider__wrapper>.slider>#rad_1:checked ~ body>.buttons>#l1{
-    background-color: rgb(156, 10, 10);
+
+#rad_4:checked .btn{
+    background-color: rgb(156, 51, 10);
 }
 
 @media (max-width:1280px) {
@@ -120,29 +120,58 @@ margin-left: 1rem;
 }
 .buttons{
     margin: 0;
-    margin-top: -70px;
+    margin-top: -65px;
     align-self: center;
 }
+.btn{
+    width: 40px;
+    height: 15px;
+    margin: 7px;
+}
 .slider__wrapper{
-height: 40vh;
+    width: 75vw;
+    height: 80vh
 }
 .slide__wrapper div{
 margin-bottom: 30px;
 }
 }
+@media (max-width:1280px) and (orientation:landscape) {
+    .slider__wrapper{
+        /* background-color: brown; */
+        height: 80vh;
+    }
+    p{
+        font-size: 4vh;
+        text-align: left;
+        }
+}
 @media (max-width:720px) {
     p{
-        font-size: 1.8vh;
+        font-size: 6vw;
         margin-left: 1rem;
         text-align: center;
         }
     .buttons{
-        margin-top: -60px;
+        margin-top: -13vw;
+    }
+    .btn{
+        width: 7vw;
+        height: 3vw;
     }
     .slider__wrapper {
         width: 90vw;
+        height: calc(90vw * 0.7);
     }
     .slide__wrapper div{
-        margin-bottom: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
+}
+@media (max-width:720px) and (orientation:landscape) {
+    .slider__wrapper{
+        /* background-color: brown; */
+        height: 80vh;
+    }
+    
 }
