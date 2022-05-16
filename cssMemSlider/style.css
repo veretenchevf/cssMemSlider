@@ -109,10 +109,6 @@ p{
     margin-left: -300%;
 }
 
-#rad_4:checked .btn{
-    background-color: rgb(156, 51, 10);
-}
-
 @media (max-width:1280px) {
 p{
 font-size: 3vh;
@@ -138,17 +134,16 @@ margin-bottom: 30px;
 }
 @media (max-width:1280px) and (orientation:landscape) {
     .slider__wrapper{
-        /* background-color: brown; */
         height: 80vh;
     }
     p{
         font-size: 4vh;
         text-align: left;
-        }
+    }
 }
 @media (max-width:720px) {
     p{
-        font-size: 6vw;
+        font-size: 4vw;
         margin-left: 1rem;
         text-align: center;
         }
@@ -160,7 +155,7 @@ margin-bottom: 30px;
         height: 3vw;
     }
     .slider__wrapper {
-        width: 90vw;
+        width: 100vw;
         height: calc(90vw * 0.7);
     }
     .slide__wrapper div{
@@ -170,8 +165,10 @@ margin-bottom: 30px;
 }
 @media (max-width:720px) and (orientation:landscape) {
     .slider__wrapper{
-        /* background-color: brown; */
+        width: 90vw;
         height: 80vh;
     }
-    
+    .buttons{
+        margin-top: -10vw;
+    }
 }
