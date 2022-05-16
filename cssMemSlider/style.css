@@ -21,7 +21,6 @@ input{
     overflow: hidden;
     border: 5px solid white;
     border-radius: 10px;
-    /* background-color: black; */
 }
 .slider{
     width: 100%;
@@ -109,6 +108,10 @@ p{
     margin-left: -300%;
 }
 
+[id="rad_1"]:active #lab_1{
+    background-color: rgb(243, 9, 9);
+}
+
 @media (max-width:1280px) {
 p{
 font-size: 3vh;
@@ -155,7 +158,7 @@ margin-bottom: 30px;
         height: 3vw;
     }
     .slider__wrapper {
-        width: 100vw;
+        width: 97vw;
         height: calc(90vw * 0.7);
     }
     .slide__wrapper div{
