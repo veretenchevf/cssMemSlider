@@ -80,8 +80,9 @@ p{
 }
 .buttons{
     display: flex;
-    margin-left: 60vw;
-    margin-top: -50px;
+    justify-content: end;
+    position: relative;
+    bottom: 2rem;
 }
 .btn{
     width: 2vw;
@@ -118,9 +119,8 @@ font-size: 3vh;
 margin-left: 1rem;
 }
 .buttons{
-    margin: 0;
+    margin: 0 1px 0 auto;
     margin-top: -65px;
-    align-self: center;
 }
 .btn{
     width: 40px;
@@ -129,33 +129,39 @@ margin-left: 1rem;
 }
 .slider__wrapper{
     width: 75vw;
-    height: 80vh
+    height: 40%;
 }
 .slide__wrapper div{
-margin-bottom: 30px;
+    margin-bottom: 30px;
+    margin: 0;
 }
 }
 @media (max-width:1280px) and (orientation:landscape) {
     .slider__wrapper{
         height: 80vh;
     }
+    .buttons{
+        bottom: -2.5rem;
+    }
     p{
         font-size: 4vh;
         text-align: left;
     }
 }
-@media (max-width:720px) {
+@media (max-width:800px) {
     p{
         font-size: 4vw;
         margin-left: 1rem;
         text-align: center;
         }
     .buttons{
-        margin-top: -13vw;
+        justify-content: center;
+        margin-top: 0;
+        bottom: 3rem;
     }
     .btn{
         width: 7vw;
-        height: 3vw;
+        height: 2vw;
     }
     .slider__wrapper {
         width: 97vw;
@@ -163,15 +169,15 @@ margin-bottom: 30px;
     }
     .slide__wrapper div{
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
-@media (max-width:720px) and (orientation:landscape) {
+@media (max-width:800px) and (orientation:landscape) {
     .slider__wrapper{
         width: 90vw;
         height: 80vh;
     }
     .buttons{
-        margin-top: -10vw;
+        justify-content: center;
     }
 }
